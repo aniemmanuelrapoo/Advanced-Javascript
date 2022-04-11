@@ -1,10 +1,8 @@
-// working on objects
+b();
+console.log(a)
 
-const Address = {
-    street: 'main',
-    number: 100,
-    apartment: {
-        floor: 3,
-        number:301
-    }
+var a = 'hello world'
+
+function b() {
+    console.log('called b')
 }
