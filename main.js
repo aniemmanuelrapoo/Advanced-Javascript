@@ -1,5 +1,4 @@
 function b() {
-    var myvar;
     console.log(myvar)
 }
 
