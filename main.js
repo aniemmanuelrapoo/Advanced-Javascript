@@ -14,3 +14,5 @@ document.addEventListener('click', clickHandler);
 
 waitThreeSecounds();
 console.log('finished execution')
+
+console.log( new Date())
