@@ -1,21 +1,21 @@
-// long running function
-function waitThreeSecounds() {
-    var ms = 3000 + new Date().getTime();
-    while (new Date() < ms){}
-    console.log('finished function')
-}
+// // long running function
+// function waitThreeSecounds() {
+//     var ms = 3000 + new Date().getTime();
+//     while (new Date() < ms){}
+//     console.log('finished function')
+// }
 
-function clickHandler(){
-    console.log('click Event')
-}
+// function clickHandler(){
+//     console.log('click Event')
+// }
 
-//listen for the click event
-document.addEventListener('click', clickHandler);
+// //listen for the click event
+// document.addEventListener('click', clickHandler);
 
-waitThreeSecounds();
-console.log('finished execution')
+// waitThreeSecounds();
+// console.log('finished execution')
 
-console.log( new Date())
+// console.log( new Date())
 
 // var a = 3 + 4 * 5;
 // console.log(a);
@@ -28,22 +28,22 @@ console.log( new Date())
 // console.log(b)
 // console.log(c)
 
-var a = (3 + 4) * 5;
-console.log(a);
+// var a = (3 + 4) * 5;
+// console.log(a);
 
-var a = 1 + 2;
-console.log(a);
-
-
-comparisoin
-console.log(1 < 2 < 3)
+// var a = 1 + 2;
+// console.log(a);
 
 
-var a = 0
-var b = false
+// comparisoin
+// console.log(1 < 2 < 3)
 
-if(a === b){
-    console.log('The are equal')
-}else{
-    console.log('Nope, not equal')
-}
+
+// var a = 0
+// var b = false
+
+// if(a === b){
+//     console.log('The are equal')
+// }else{
+//     console.log('Nope, not equal')
+// }
