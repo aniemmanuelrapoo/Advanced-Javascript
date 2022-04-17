@@ -39,8 +39,8 @@ comparisoin
 console.log(1 < 2 < 3)
 
 
-// var a = 0
-// var b = false
+var a = 0
+var b = false
 
 // if(a === b){
 //     console.log('The are equal')
