@@ -47,3 +47,5 @@
 // }else{
 //     console.log('Nope, not equal')
 // }
+
+//conceptual aside
