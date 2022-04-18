@@ -49,3 +49,12 @@
 // }
 
 //conceptual aside
+//Boolean
+var a;
+
+//goes to the internet and look for a value
+a = "hi"
+
+if(a) {
+    console.log('something is there');
+}
