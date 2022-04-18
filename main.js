@@ -53,8 +53,15 @@
 var a;
 
 //goes to the internet and look for a value
-a = 0
+// a = 0
 
-if(a || a === 0) {
-    console.log('something is there');
+// if(a || a === 0) {
+//     console.log('something is there');
+// }
+
+// Default Values
+const greet = (name) => {
+    console.log("Hello" + name);
 }
+
+greet("rapoo")
