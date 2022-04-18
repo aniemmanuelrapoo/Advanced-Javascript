@@ -53,8 +53,8 @@
 var a;
 
 //goes to the internet and look for a value
-a = "hi"
+a = 0
 
-if(a) {
+if(a || a === 0) {
     console.log('something is there');
 }
