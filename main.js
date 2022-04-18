@@ -61,7 +61,7 @@ var a;
 
 // Default Values
 const greet = (name) => {
-    console.log("Hello" + name);
+    console.log(`Hello ${name}`);
 }
 
 greet("rapoo")
