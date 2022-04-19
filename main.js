@@ -97,7 +97,7 @@
 //object literials
 //best way to write objects
 
-var person = {
+var Rapoo = {
     firstname: "rapoo",
     lastname: "Tony",
     address: {
@@ -110,4 +110,4 @@ function greet(person){
     console.log(`Hi ${person.firstname}`);
 }
 
-greet(rapoo)
+greet(Rapoo)
