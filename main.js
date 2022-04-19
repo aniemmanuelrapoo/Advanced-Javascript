@@ -117,3 +117,8 @@ greet({
     firstname: "Mary",
     lastname: "Doe"
 })
+
+Rapoo.address2 = {
+    home: "Heaven"
+}
+console.log(Rapoo);
