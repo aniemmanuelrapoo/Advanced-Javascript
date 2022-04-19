@@ -69,4 +69,6 @@
 // greet()
 
 // Frame Works
-console.log(libraryName);
+// console.log(libraryName);
+
+//object and the dot
