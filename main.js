@@ -111,3 +111,9 @@ function greet(person){
 }
 
 greet(Rapoo)
+
+// creating objects on the fly
+greet({
+    firstname: "Mary",
+    lastname: "Doe"
+})
