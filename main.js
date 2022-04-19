@@ -72,3 +72,13 @@
 // console.log(libraryName);
 
 //object and the dot
+
+var person = new Object();
+
+person["firstname"] = "Tony";
+person["lastname"] = "Rapoo"
+
+var firstNameProperty = "firstname"
+
+console.log(person);
+console.log(person[firstNameProperty]);
