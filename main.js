@@ -97,28 +97,30 @@
 //object literials
 //best way to write objects
 
-var Rapoo = {
-    firstname: "rapoo",
-    lastname: "Tony",
-    address: {
-        street: "10 main st..",
-        city: "New York"
-    }
-}
+// var Rapoo = {
+//     firstname: "rapoo",
+//     lastname: "Tony",
+//     address: {
+//         street: "10 main st..",
+//         city: "New York"
+//     }
+// }
 
-function greet(person){
-    console.log(`Hi ${person.firstname}`);
-}
+// function greet(person){
+//     console.log(`Hi ${person.firstname}`);
+// }
 
-greet(Rapoo)
+// greet(Rapoo)
 
-// creating objects on the fly
-greet({
-    firstname: "Mary",
-    lastname: "Doe"
-})
+// // creating objects on the fly
+// greet({
+//     firstname: "Mary",
+//     lastname: "Doe"
+// })
 
-Rapoo.address2 = {
-    home: "Heaven"
-}
-console.log(Rapoo);
+// Rapoo.address2 = {
+//     home: "Heaven"
+// }
+// console.log(Rapoo);
+
+//Back to frameWorks
