@@ -88,5 +88,7 @@ console.log(person.lastname);
 
 person.address = new Object();
 person.address.street = "10 main str..."
+person.address.city = "New York"
 
 console.log(person.address.street);
+console.log(person["address"]["city"]);
