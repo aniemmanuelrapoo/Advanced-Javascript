@@ -105,4 +105,9 @@ var person = {
         city: "New York"
     }
 }
-console.log(person);
+
+function greet(person){
+    console.log(`Hi ${person.firstname}`);
+}
+
+greet(rapoo)
