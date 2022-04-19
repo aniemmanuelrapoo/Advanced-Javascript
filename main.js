@@ -96,5 +96,8 @@
 
 //object literials
 
-var person = {}
+var person = {
+    firstname: "rapoo",
+    lastname: "Tony"
+}
 console.log(person);
