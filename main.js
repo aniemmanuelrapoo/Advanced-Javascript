@@ -98,6 +98,10 @@
 
 var person = {
     firstname: "rapoo",
-    lastname: "Tony"
+    lastname: "Tony",
+    address: {
+        street: "10 main st..",
+        city: "New York"
+    }
 }
 console.log(person);
