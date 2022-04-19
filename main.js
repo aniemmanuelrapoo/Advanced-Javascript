@@ -150,3 +150,7 @@ var objectLiterials = {
 }
 console.log(JSON.stringify(objectLiterials));
 
+//converting JSON to object
+var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgrammer": true}');
+
+console.log(jsonValue);
