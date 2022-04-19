@@ -95,6 +95,7 @@
 // console.log(person["address"]["city"]);
 
 //object literials
+//best way to write objects
 
 var person = {
     firstname: "rapoo",
