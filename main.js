@@ -60,10 +60,12 @@ var a;
 // }
 
 // Default Values
-const greet = (name) => {
-    name = name || '<Your name here>'
-    console.log(`Hello ${name}`);
-}
+// const greet = (name) => {
+//     name = name || '<Your name here>'
+//     console.log(`Hello ${name}`);
+// }
 
-greet("rapoo")
-greet()
+// greet("rapoo")
+// greet()
+
+//Frame works
