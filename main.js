@@ -72,6 +72,7 @@
 // console.log(libraryName);
 
 //object and the dot
+//not the good way to create objects
 
 var person = new Object();
 
