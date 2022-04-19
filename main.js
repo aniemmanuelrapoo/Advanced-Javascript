@@ -144,13 +144,21 @@
 // JSON and obj literials
 
 // converting obj to JSON
-var objectLiterials = {
-    firstname: 'Mary',
-    isAProgrammer: true
+// var objectLiterials = {
+//     firstname: 'Mary',
+//     isAProgrammer: true
+// }
+// console.log(JSON.stringify(objectLiterials));
+
+// //converting JSON to object
+// var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgrammer": true}');
+
+// console.log(jsonValue);
+
+//functions are objects
+function greet() {
+    console.log('hi');
 }
-console.log(JSON.stringify(objectLiterials));
 
-//converting JSON to object
-var jsonValue = JSON.parse('{"firstname": "Mary", "isAProgrammer": true}');
-
-console.log(jsonValue);
+greet.language = 'english'
+console.log(greet.language);
