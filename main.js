@@ -123,4 +123,20 @@
 // }
 // console.log(Rapoo);
 
-//Back to frameWorks
+//Back to frameWorks faking namespace
+
+var greet = 'Hello';
+var greet = 'Hola'
+console.log(greet);
+
+var english = {
+    greetings: {
+        basic: 'Helo'
+    }
+}
+
+var spanish = {};
+
+spanish.greet = "Hola"
+
+console.log(english);
