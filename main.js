@@ -74,22 +74,24 @@
 //object and the dot
 //not the good way to create objects
 
-var person = new Object();
+// var person = new Object();
 
-person["firstname"] = "Tony";
-person["lastname"] = "Rapoo"
+// person["firstname"] = "Tony";
+// person["lastname"] = "Rapoo"
 
-var firstNameProperty = "firstname"
+// var firstNameProperty = "firstname"
 
-console.log(person);
-console.log(person[firstNameProperty]);
+// console.log(person);
+// console.log(person[firstNameProperty]);
 
-console.log(person.firstname);
-console.log(person.lastname);
+// console.log(person.firstname);
+// console.log(person.lastname);
 
-person.address = new Object();
-person.address.street = "10 main str..."
-person.address.city = "New York"
+// person.address = new Object();
+// person.address.street = "10 main str..."
+// person.address.city = "New York"
 
-console.log(person.address.street);
-console.log(person["address"]["city"]);
+// console.log(person.address.street);
+// console.log(person["address"]["city"]);
+
+//object literials
