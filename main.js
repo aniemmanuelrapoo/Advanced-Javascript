@@ -125,18 +125,28 @@
 
 //Back to frameWorks faking namespace
 
-var greet = 'Hello';
-var greet = 'Hola'
-console.log(greet);
+// var greet = 'Hello';
+// var greet = 'Hola'
+// console.log(greet);
 
-var english = {
-    greetings: {
-        basic: 'Helo'
-    }
+// var english = {
+//     greetings: {
+//         basic: 'Helo'
+//     }
+// }
+
+// var spanish = {};
+
+// spanish.greet = "Hola"
+
+// console.log(english);
+
+// JSON and obj literials
+
+// converting obj to JSON
+var objectLiterials = {
+    firstname: 'Mary',
+    isAProgrammer: true
 }
+console.log(JSON.stringify(objectLiterials));
 
-var spanish = {};
-
-spanish.greet = "Hola"
-
-console.log(english);
