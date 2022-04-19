@@ -61,6 +61,7 @@ var a;
 
 // Default Values
 const greet = (name) => {
+    name = name || '<Your name here>'
     console.log(`Hello ${name}`);
 }
 
