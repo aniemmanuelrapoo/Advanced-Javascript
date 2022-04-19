@@ -85,3 +85,6 @@ console.log(person[firstNameProperty]);
 
 console.log(person.firstname);
 console.log(person.lastname);
+
+person.address = new Object();
+person.address.street = "10 main str..."
