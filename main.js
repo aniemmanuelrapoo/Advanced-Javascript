@@ -95,3 +95,6 @@
 // console.log(person["address"]["city"]);
 
 //object literials
+
+var person = {}
+console.log(person);
