@@ -50,7 +50,7 @@
 
 //conceptual aside
 //Boolean
-var a;
+// var a;
 
 //goes to the internet and look for a value
 // a = 0
