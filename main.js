@@ -182,37 +182,51 @@
 //     console.log("hi");
 // })
 
-//by value, by reference
-//by value (primitives)
-var a = 3;
-var b;
+// //by value, by reference
+// //by value (primitives)
+// var a = 3;
+// var b;
 
-b = a;
-a =  2;
+// b = a;
+// a =  2;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
-//by reference (all objects (including functions))
-var c = { greetings: 'hi' };
-var d;
+// //by reference (all objects (including functions))
+// var c = { greetings: 'hi' };
+// var d;
 
-d = c;
-c.greetings = 'hello'; // mutate
+// d = c;
+// c.greetings = 'hello'; // mutate
 
-console.log(c);
-console.log(d)
+// console.log(c);
+// console.log(d)
 
-//by reference (even as parameters)
-function changeGreetings(obj) {
-    obj.greetings = 'Hola'; // mutate
+// //by reference (even as parameters)
+// function changeGreetings(obj) {
+//     obj.greetings = 'Hola'; // mutate
+// }
+
+// changeGreetings(d);
+// console.log(c)
+// console.log(d)
+
+// //equals operator sets up new memory space (new address)
+// c = { greetings: 'howdy' }
+// console.log(c)
+// console.log(d)
+
+//objects, functions and this
+function a () {
+    console.log(this);
+    this.newVariable = "hello"
+}
+var b = function() {
+    console.log(this);
 }
 
-changeGreetings(d);
-console.log(c)
-console.log(d)
+a();
 
-//equals operator sets up new memory space (new address)
-c = { greetings: 'howdy' }
-console.log(c)
-console.log(d)
+console.log(newVariable);
+b();
