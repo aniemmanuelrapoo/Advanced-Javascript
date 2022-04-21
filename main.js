@@ -202,3 +202,12 @@ c.greetings = 'hello'; // mutate
 
 console.log(c);
 console.log(d)
+
+//by reference (even as parameters)
+function changeGreetings(obj) {
+    obj.greetings = 'Hola'; // mutate
+}
+
+changeGreetings(d);
+console.log(c)
+console.log(d)
