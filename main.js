@@ -169,3 +169,6 @@ const greet = () => {
     console.log('h1');
 }
 //function expresion
+var annonymousGreet = function() {
+    console.log('hi');
+}
