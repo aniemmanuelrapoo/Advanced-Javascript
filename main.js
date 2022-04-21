@@ -192,3 +192,13 @@ a =  2;
 
 console.log(a);
 console.log(b);
+
+//by reference (all objects (including functions))
+var c = { greetings: 'hi' };
+var d;
+
+d = c;
+c.greetings = 'hello'; // mutate
+
+console.log(c);
+console.log(d)
