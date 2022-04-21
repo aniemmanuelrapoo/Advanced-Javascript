@@ -156,9 +156,16 @@
 // console.log(jsonValue);
 
 //functions are objects
-function greet() {
-    console.log('hi');
-}
+// function greet() {
+//     console.log('hi');
+// }
 
-greet.language = 'english'
-console.log(greet.language);
+// greet.language = 'english'
+// console.log(greet.language);
+
+//function statement
+greet()
+const greet = () => {
+    console.log('h1');
+}
+//function expresion
