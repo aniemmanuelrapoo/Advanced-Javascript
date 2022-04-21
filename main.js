@@ -164,11 +164,20 @@
 // console.log(greet.language);
 
 //function statement
-greet()
 const greet = () => {
     console.log('h1');
 }
+greet()
 //function expresion
 var annonymousGreet = function() {
     console.log('hi');
 }
+annonymousGreet()
+
+//function expression 2
+function log(a){
+    a()
+}
+log(function() {
+    console.log("hi");
+})
