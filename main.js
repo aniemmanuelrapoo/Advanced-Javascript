@@ -250,20 +250,42 @@
 
 // c.log()
 
-//arrays
-var arr = [
-    1,
-    false,
-    {
-        name: 'Rapoo',
-        address: "10 main str"
-    },
-    function(name) {
-        var greetings = "hello"
-        console.log(`${greetings} ${name}`);
-    },
-    "hello"
-]
+// //arrays
+// var arr = [
+//     1,
+//     false,
+//     {
+//         name: 'Rapoo',
+//         address: "10 main str"
+//     },
+//     function(name) {
+//         var greetings = "hello"
+//         console.log(`${greetings} ${name}`);
+//     },
+//     "hello"
+// ]
 
-console.log(arr);
-arr[3](arr[2].name)
+// console.log(arr);
+// arr[3](arr[2].name)
+
+//Arguments and Spread
+function greet(firstname, lastname, language = "en"){
+    if(arguments.length === 0){
+        console.log('Missing parameter');
+        console.log('**********');
+        return;
+    }
+
+    lastname = lastname || "pablo"
+    console.log(firstname);
+    console.log(lastname);
+    console.log(language);
+    console.log(arguments);
+    console.log(`arg 0: ${arguments[0]}`);
+    console.log("----------");
+}
+
+greet();
+greet("frank");
+greet("matt", 'frank');
+greet('john', 'rapo', 'english'); 
