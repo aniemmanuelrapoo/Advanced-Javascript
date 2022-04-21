@@ -230,3 +230,22 @@ a();
 
 console.log(newVariable);
 b();
+
+var c = {
+    name: 'The C Object',
+    log: function() {
+        var self = this;
+
+        self.name = 'Updated C Object'
+        console.log(self);
+
+        var setname = function(newname){
+            self.name = newname
+        }
+        setname("updated again!!! the c obj")
+
+        console.log(self)
+    }
+}
+
+c.log()
