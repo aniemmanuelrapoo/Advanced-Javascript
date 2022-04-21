@@ -217,35 +217,53 @@
 // console.log(c)
 // console.log(d)
 
-//objects, functions and this
-function a () {
-    console.log(this);
-    this.newVariable = "hello"
-}
-var b = function() {
-    console.log(this);
-}
+// //objects, functions and this
+// function a () {
+//     console.log(this);
+//     this.newVariable = "hello"
+// }
+// var b = function() {
+//     console.log(this);
+// }
 
-a();
+// a();
 
-console.log(newVariable);
-b();
+// console.log(newVariable);
+// b();
 
-var c = {
-    name: 'The C Object',
-    log: function() {
-        var self = this;
+// var c = {
+//     name: 'The C Object',
+//     log: function() {
+//         var self = this;
 
-        self.name = 'Updated C Object'
-        console.log(self);
+//         self.name = 'Updated C Object'
+//         console.log(self);
 
-        var setname = function(newname){
-            self.name = newname
-        }
-        setname("updated again!!! the c obj")
+//         var setname = function(newname){
+//             self.name = newname
+//         }
+//         setname("updated again!!! the c obj")
 
-        console.log(self)
-    }
-}
+//         console.log(self)
+//     }
+// }
 
-c.log()
+// c.log()
+
+//arrays
+var arr = [
+    1,
+    false,
+    {
+        name: 'Rapoo',
+        address: "10 main str"
+    },
+    function(name) {
+        var greetings = "hello"
+        console.log(`${greetings} ${name}`);
+    },
+    "hello"
+]
+
+console.log(arr);
+arr[3](arr[2].name)
