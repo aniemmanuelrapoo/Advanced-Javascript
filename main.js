@@ -268,24 +268,29 @@
 // console.log(arr);
 // arr[3](arr[2].name)
 
-//Arguments and Spread
-function greet(firstname, lastname, language = "en"){
-    if(arguments.length === 0){
-        console.log('Missing parameter');
-        console.log('**********');
-        return;
-    }
+// //Arguments and Spread
+// function greet(firstname, lastname, language = "en"){
+//     if(arguments.length === 0){
+//         console.log('Missing parameter');
+//         console.log('**********');
+//         return;
+//     }
 
-    lastname = lastname || "pablo"
-    console.log(firstname);
-    console.log(lastname);
-    console.log(language);
-    console.log(arguments);
-    console.log(`arg 0: ${arguments[0]}`);
-    console.log("----------");
+//     lastname = lastname || "pablo"
+//     console.log(firstname);
+//     console.log(lastname);
+//     console.log(language);
+//     console.log(arguments);
+//     console.log(`arg 0: ${arguments[0]}`);
+//     console.log("----------");
+// }
+
+// greet();
+// greet("frank");
+// greet("matt", 'frank');
+// greet('john', 'rapo', 'english'); 
+
+//function Overloading
+function greet(firstname, lastname, language){
+
 }
-
-greet();
-greet("frank");
-greet("matt", 'frank');
-greet('john', 'rapo', 'english'); 
