@@ -163,21 +163,32 @@
 // greet.language = 'english'
 // console.log(greet.language);
 
-//function statement
-const greet = () => {
-    console.log('h1');
-}
-greet()
-//function expresion
-var annonymousGreet = function() {
-    console.log('hi');
-}
-annonymousGreet()
+// //function statement
+// const greet = () => {
+//     console.log('h1');
+// }
+// greet()
+// //function expresion
+// var annonymousGreet = function() {
+//     console.log('hi');
+// }
+// annonymousGreet()
 
-//function expression 2
-function log(a){
-    a()
-}
-log(function() {
-    console.log("hi");
-})
+// //function expression 2
+// function log(a){
+//     a()
+// }
+// log(function() {
+//     console.log("hi");
+// })
+
+//by value, by reference
+//by value (primitives)
+var a = 3;
+var b;
+
+b = a;
+a =  2;
+
+console.log(a);
+console.log(b);
