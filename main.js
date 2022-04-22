@@ -310,11 +310,33 @@
 // greetEnglish('john', 'doe')
 // greetSpanish('john', 'doe')
 
-// Automatc semicolon insertion
-function getPerson(){
-    return {
-        firstname: 'Tony'
-    }
-}
+// // Automatc semicolon insertion
+// function getPerson(){
+//     return {
+//         firstname: 'Tony'
+//     }
+// }
 
-console.log(getPerson());
+// console.log(getPerson());
+
+//always comment your code(use of whitespace)
+var 
+    //first name of the person
+    firstname,
+
+    //lastname of the person
+    lastname,
+
+    //the language
+    //can be 'en' or 'es'
+    language;
+
+var person = {
+    //the first name
+    firstname: 'john',
+
+    //the last name
+    //(always required)
+    lastname: 'doe'
+}
+console.log(person);
