@@ -368,11 +368,14 @@
 //     console.log(`${greeting} ${name}`);
 // }(firstname)); //can be inside parenresis or outside
 
-//IIFES and safe code 
-(function(global, name) {
-    var greeting = 'Hello';
-    global.greeting = "whatsUp"
-    console.log(`${greeting} ${name}`);
-}(window, 'john'))  //IIFE
+// //IIFES and safe code 
+// (function(global, name) {
+//     var greeting = 'Hello';
+//     global.greeting = "whatsUp"
+//     console.log(`${greeting} ${name}`);
+// }(window, 'john'))  //IIFE
 
-console.log(greeting);
+// console.log(greeting);
+
+//Understanding Closures
+//move to main2.js for continuation 
