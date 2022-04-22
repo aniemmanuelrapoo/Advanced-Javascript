@@ -319,24 +319,51 @@
 
 // console.log(getPerson());
 
-//always comment your code(use of whitespace)
-var 
-    //first name of the person
-    firstname,
+// //always comment your code(use of whitespace)
+// var 
+//     //first name of the person
+//     firstname,
 
-    //lastname of the person
-    lastname,
+//     //lastname of the person
+//     lastname,
 
-    //the language
-    //can be 'en' or 'es'
-    language;
+//     //the language
+//     //can be 'en' or 'es'
+//     language;
 
-var person = {
-    //the first name
-    firstname: 'john',
+// var person = {
+//     //the first name
+//     firstname: 'john',
 
-    //the last name
-    //(always required)
-    lastname: 'doe'
+//     //the last name
+//     //(always required)
+//     lastname: 'doe'
+// }
+// console.log(person);
+
+//immediately invoked function expression(iife)
+
+//function statement
+function greet(name){
+    console.log(`Hello ${name}`);
 }
-console.log(person);
+greet('john')
+
+//using a function expression
+var greetfun = function(name){
+    console.log(`Hello ${name}`);
+}
+greetfun('john1')
+
+//using an immediately invoked function expression(iife)
+var greeting = function(name){
+    return `Hello ${name}`
+}('john3');
+console.log(greeting);
+
+//function without a name on it wraped in parenteces is a function expression, also an (iife)
+var firstname = 'john4';
+(function(name){
+    var greeting = 'Hello'
+    console.log(`${greeting} ${name}`);
+}(firstname)); //can be inside parenresis or outside
