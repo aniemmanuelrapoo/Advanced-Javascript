@@ -378,4 +378,4 @@
 // console.log(greeting);
 
 //Understanding Closures
-//move to main2.js for continuation 
+//move to main2.js for continuation (very important topic)
