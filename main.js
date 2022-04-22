@@ -290,22 +290,31 @@
 // greet("matt", 'frank');
 // greet('john', 'rapo', 'english'); 
 
-//function Overloading
-function greet(firstname, lastname, language){
-    language = language || 'en';
+// //function Overloading
+// function greet(firstname, lastname, language){
+//     language = language || 'en';
 
-    if(language === 'en'){
-        console.log(`Hello ${firstname} ${lastname}`);
+//     if(language === 'en'){
+//         console.log(`Hello ${firstname} ${lastname}`);
+//     }
+//     if(language === 'es'){
+//         console.log(`Hola ${firstname} ${lastname}`);
+//     }
+// }
+// function greetEnglish(firstname, lastname){
+//     greet(firstname, lastname, 'en')
+// }
+// function greetSpanish(firstname, lastname){
+//     greet(firstname, lastname, 'es')
+// }
+// greetEnglish('john', 'doe')
+// greetSpanish('john', 'doe')
+
+// Automatc semicolon insertion
+function getPerson(){
+    return {
+        firstname: 'Tony'
     }
-    if(language === 'es'){
-        console.log(`Hola ${firstname} ${lastname}`);
-    }
 }
-function greetEnglish(firstname, lastname){
-    greet(firstname, lastname, 'en')
-}
-function greetSpanish(firstname, lastname){
-    greet(firstname, lastname, 'es')
-}
-greetEnglish('john', 'doe')
-greetSpanish('john', 'doe')
+
+console.log(getPerson());
