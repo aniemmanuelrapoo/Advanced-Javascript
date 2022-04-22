@@ -341,29 +341,38 @@
 // }
 // console.log(person);
 
-//immediately invoked function expression(iife)
+// //immediately invoked function expression(iife)
 
-//function statement
-function greet(name){
-    console.log(`Hello ${name}`);
-}
-greet('john')
+// //function statement
+// function greet(name){
+//     console.log(`Hello ${name}`);
+// }
+// greet('john')
 
-//using a function expression
-var greetfun = function(name){
-    console.log(`Hello ${name}`);
-}
-greetfun('john1')
+// //using a function expression
+// var greetfun = function(name){
+//     console.log(`Hello ${name}`);
+// }
+// greetfun('john1')
 
-//using an immediately invoked function expression(iife)
-var greeting = function(name){
-    return `Hello ${name}`
-}('john3');
-console.log(greeting);
+// //using an immediately invoked function expression(iife)
+// var greeting = function(name){
+//     return `Hello ${name}`
+// }('john3');
+// console.log(greeting);
 
-//function without a name on it wraped in parenteces is a function expression, also an (iife)
-var firstname = 'john4';
-(function(name){
-    var greeting = 'Hello'
+// //function without a name on it wraped in parenteces is a function expression, also an (iife)
+// var firstname = 'john4';
+// (function(name){
+//     var greeting = 'Hello'
+//     console.log(`${greeting} ${name}`);
+// }(firstname)); //can be inside parenresis or outside
+
+//IIFES and safe code 
+(function(global, name) {
+    var greeting = 'Hello';
+    global.greeting = "whatsUp"
     console.log(`${greeting} ${name}`);
-}(firstname)); //can be inside parenresis or outside
+}(window, 'john'))  //IIFE
+
+console.log(greeting);
