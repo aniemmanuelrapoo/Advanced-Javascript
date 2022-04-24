@@ -120,56 +120,59 @@
 //     console.log('I am done the secound time');
 // })
 
-//call apply and bind
-//understanding bind
-var person = {
-    firstname: 'john',
-    lastname: 'doe',
-    getFullname: function() {
-        let fullname = `${this.firstname} ${this.lastname}`
-        return fullname;
-    }
-}
+// //call apply and bind
+// //understanding bind
+// var person = {
+//     firstname: 'john',
+//     lastname: 'doe',
+//     getFullname: function() {
+//         let fullname = `${this.firstname} ${this.lastname}`
+//         return fullname;
+//     }
+// }
 
-var logName = function(lang1, lang2){
-    console.log(`Logged ${this.getFullname()}`);
-    console.log(`Argument ${lang1} ${lang2}`);
-    console.log('.................');
-}
-var logPersonName = logName.bind(person);
-logPersonName('en', 'es');
+// var logName = function(lang1, lang2){
+//     console.log(`Logged ${this.getFullname()}`);
+//     console.log(`Argument ${lang1} ${lang2}`);
+//     console.log('.................');
+// }
+// var logPersonName = logName.bind(person);
+// logPersonName('en', 'es');
 
-//call
-logName.call(person, 'en', 'es');
+// //call
+// logName.call(person, 'en', 'es');
 
-//apply
-logName.apply(person, ['en', 'es']);
+// //apply
+// logName.apply(person, ['en', 'es']);
 
-// you can also use call, apply and bind to do this
-(function(lang1, lang2){
-    console.log(`Logged ${this.getFullname()}`);
-    console.log(`Argument ${lang1} ${lang2}`);
-    console.log('.................');
-}).apply(person, ['es', 'en']);
+// // you can also use call, apply and bind to do this
+// (function(lang1, lang2){
+//     console.log(`Logged ${this.getFullname()}`);
+//     console.log(`Argument ${lang1} ${lang2}`);
+//     console.log('.................');
+// }).apply(person, ['es', 'en']);
 
-//function borrowing
-var person2 = {
-    firstname: 'jane',
-    lastname: 'Doe'
-}
+// //function borrowing
+// var person2 = {
+//     firstname: 'jane',
+//     lastname: 'Doe'
+// }
 
-console.log(person.getFullname.apply(person2));
+// console.log(person.getFullname.apply(person2));
 
-//function currying (has to do with bind)
-function mutiply(a, b){
-    return a*b;
-}
-var mutiplyByTwo = mutiply.bind(this, 2); //sets first parameter to be 2 by default
-console.log(mutiplyByTwo(4));
+// //function currying (has to do with bind)
+// function mutiply(a, b){
+//     return a*b;
+// }
+// var mutiplyByTwo = mutiply.bind(this, 2); //sets first parameter to be 2 by default
+// console.log(mutiplyByTwo(4));
 
-var mutiplyByThree = mutiply.bind(this, 3);
-console.log(mutiplyByThree(4));
+// var mutiplyByThree = mutiply.bind(this, 3);
+// console.log(mutiplyByThree(4));
 
-//you can pamanetly set values
-var mutiplyBy = mutiply.bind(this, 3, 2); //over writes the first and secound parameter.
-console.log(mutiplyBy(4)); // this is a third parameter which is not used yet
+// //you can pamanetly set values
+// var mutiplyBy = mutiply.bind(this, 3, 2); //over writes the first and secound parameter.
+// console.log(mutiplyBy(4)); // this is a third parameter which is not used yet
+
+
+//functional programming
