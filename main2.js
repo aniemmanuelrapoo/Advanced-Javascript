@@ -159,3 +159,17 @@ var person2 = {
 }
 
 console.log(person.getFullname.apply(person2));
+
+//function currying (has to do with bind)
+function mutiply(a, b){
+    return a*b;
+}
+var mutiplyByTwo = mutiply.bind(this, 2); //sets first parameter to be 2 by default
+console.log(mutiplyByTwo(4));
+
+var mutiplyByThree = mutiply.bind(this, 3);
+console.log(mutiplyByThree(4));
+
+//you can pamanetly set values
+var mutiplyBy = mutiply.bind(this, 3, 2); //over writes the first and secound parameter.
+console.log(mutiplyBy(4)); // this is a third parameter which is not used yet
