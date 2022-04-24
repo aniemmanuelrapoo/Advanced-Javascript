@@ -59,33 +59,49 @@
 // fs2[1]();
 // fs2[2]();
 
-// function factories (closures)
-function makeGreeting(language){
-    return function(firstname, lastname){
-        if(language === 'en'){
-            console.log(`Hello ${firstname} ${lastname}`);
-        }
-        if(language === 'es'){
-            console.log(`Hola ${firstname} ${lastname}`);
-        }
-    }
+// // function factories (closures)
+// function makeGreeting(language){
+//     return function(firstname, lastname){
+//         if(language === 'en'){
+//             console.log(`Hello ${firstname} ${lastname}`);
+//         }
+//         if(language === 'es'){
+//             console.log(`Hola ${firstname} ${lastname}`);
+//         }
+//     }
+// }
+
+// var greetEnglish = makeGreeting('en')
+// var greetSpanish = makeGreeting('es')
+
+// greetEnglish('john', 'doe')
+// greetSpanish('rapo', 'man')
+
+// //try this closure
+// const ageNum = (age) => {
+//     return (fn, ln) => {
+//         console.log(`${fn} ${ln} is ${age}`);
+//     }
+// }
+
+// let markAge = ageNum(20)
+// let lightAge = ageNum(30)
+
+// markAge('mark', 'john')
+// lightAge('light', 'bro')
+
+//closeures and callbacks
+function sayHiLater(){
+    var greeting = "Hi";
+
+    setTimeout(() => {
+        console.log(greeting);
+    }, 3000);
 }
 
-var greetEnglish = makeGreeting('en')
-var greetSpanish = makeGreeting('es')
+sayHiLater();
 
-greetEnglish('john', 'doe')
-greetSpanish('rapo', 'man')
+//jQuery uses function expression and first-class function
+//$("button").click(function(){
 
-//try this closure
-const ageNum = (age) => {
-    return (fn, ln) => {
-        console.log(`${fn} ${ln} is ${age}`);
-    }
-}
-
-let markAge = ageNum(20)
-let lightAge = ageNum(30)
-
-markAge('mark', 'john')
-lightAge('light', 'bro')
+// });
