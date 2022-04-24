@@ -76,3 +76,16 @@ var greetSpanish = makeGreeting('es')
 
 greetEnglish('john', 'doe')
 greetSpanish('rapo', 'man')
+
+//try this closure
+const ageNum = (age) => {
+    return (fn, ln) => {
+        console.log(`${fn} ${ln} is ${age}`);
+    }
+}
+
+let markAge = ageNum(20)
+let lightAge = ageNum(30)
+
+markAge('mark', 'john')
+lightAge('light', 'bro')
