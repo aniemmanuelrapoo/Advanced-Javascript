@@ -212,3 +212,8 @@ var checkPastLimit2 = function(len){
 }
 var arr5 = mapForEach(arr1, checkPastLimit2(1));
 console.log(arr5);
+
+
+//functional programming part 2 underscroe js
+var arr6 = _.map(arr1, function(item) { return item * 3})
+console.log(arr6);
