@@ -138,3 +138,16 @@ var logName = function(lang1, lang2){
 }
 var logPersonName = logName.bind(person);
 logPersonName('en', 'es');
+
+//call
+logName.call(person, 'en', 'es');
+
+//apply
+logName.apply(person, ['en', 'es']);
+
+// you can also use call, apply and bind to do this
+(function(lang1, lang2){
+    console.log(`Logged ${this.getFullname()}`);
+    console.log(`Argument ${lang1} ${lang2}`);
+    console.log('.................');
+}).apply(person, ['es', 'en']);
