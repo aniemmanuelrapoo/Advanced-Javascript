@@ -137,3 +137,8 @@
 //odds and ends
 //initialization
 //filling in your obejects properly
+
+//typeof, instanceof, and figuring out what something is
+var d = [];
+console.log(typeof d); //werid!
+console.log(Object.prototype.toString.call(d)); //better
