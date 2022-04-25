@@ -94,5 +94,5 @@
 // }
 // console.log("john".isLengthGraterThan(3));
 
-//Danger: built in functions constructiors are dangerous
+//Danger: built in functions constructiors are dangerous for premitives(strings, numbers, boolean etc)
 // try aviod using them unless intentonal
