@@ -96,3 +96,6 @@
 
 //Danger: built in functions constructiors are dangerous for premitives(strings, numbers, boolean etc)
 // try aviod using them unless intentonal
+
+
+//danger: dont use for in loop in array, instead use normal for loop because array are object
