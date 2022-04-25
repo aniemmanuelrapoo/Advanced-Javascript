@@ -88,8 +88,11 @@
 // var jane = new Person('jane', 'doe');
 // console.log(jane);
 
-//Built in function constrctors
-String.prototype.isLengthGraterThan = function(limit){
-    return this.length > limit
-}
-console.log("john".isLengthGraterThan(3));
+// //Built in function constrctors
+// String.prototype.isLengthGraterThan = function(limit){
+//     return this.length > limit
+// }
+// console.log("john".isLengthGraterThan(3));
+
+//Danger: built in functions constructiors are dangerous
+// try aviod using them unless intentonal
