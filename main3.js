@@ -70,20 +70,26 @@
 // console.log(john);
 
 
-//Building Objects (function constructors and the keyword 'new') new folder
-function Person(fn, ln) {
-    console.log(this);
-    this.firstname = fn;
-    this.lastname = ln;
-    console.log('this is invoked');
+// //Building Objects (function constructors and the keyword 'new') new folder
+// function Person(fn, ln) {
+//     console.log(this);
+//     this.firstname = fn;
+//     this.lastname = ln;
+//     console.log('this is invoked');
+// }
+
+// Person.prototype.getFullName = function(){
+//     return this.firstname + " " + this.lastname;
+// }
+
+// var john = new Person('john', 'doe');
+// console.log(john);
+
+// var jane = new Person('jane', 'doe');
+// console.log(jane);
+
+//Built in function constrctors
+String.prototype.isLengthGraterThan = function(limit){
+    return this.length > limit
 }
-
-Person.prototype.getFullName = function(){
-    return this.firstname + " " + this.lastname;
-}
-
-var john = new Person('john', 'doe');
-console.log(john);
-
-var jane = new Person('jane', 'doe');
-console.log(jane);
+console.log("john".isLengthGraterThan(3));
