@@ -138,7 +138,15 @@
 //initialization
 //filling in your obejects properly
 
-//typeof, instanceof, and figuring out what something is
-var d = [];
-console.log(typeof d); //werid!
-console.log(Object.prototype.toString.call(d)); //better
+// //typeof, instanceof, and figuring out what something is
+// var d = [];
+// console.log(typeof d); //werid!
+// console.log(Object.prototype.toString.call(d)); //better
+
+
+//Strict Mode-- must be at the top of your file
+"use strict";
+
+var person;
+person = {};
+console.log(person);
