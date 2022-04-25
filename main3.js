@@ -133,3 +133,7 @@
 //es6 and classes
 //classes are object
 //prototypal inheritance
+
+//odds and ends
+//initialization
+//filling in your obejects properly
