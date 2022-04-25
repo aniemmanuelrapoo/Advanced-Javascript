@@ -99,3 +99,17 @@
 
 
 //danger: dont use for in loop in array, instead use normal for loop because array are object
+
+//object.create and pure prototype inheritance
+var person = {
+    firstname: 'default',
+    lastname: 'default',
+    greet: function(){
+        return 'Hi ' + this.firstname
+    }
+}
+
+var john = Object.create(person);
+john.firstname = 'john'
+john.lastname = 'doe'
+console.log(john);
