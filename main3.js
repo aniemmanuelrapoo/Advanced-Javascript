@@ -100,31 +100,36 @@
 
 //danger: dont use for in loop in array, instead use normal for loop because array are object
 
-//object.create and pure prototype inheritance
-//old browers
-//polyfill
-if(!Object.create){
-    Object.create = function(o){
-        if(arguments.length > 1){
-            throw new Error('Object.create implementation' + ' only accepts the first parameter')
-        }
-        function F(){
-            F.prototype = o;
-            return new F();
-        }
-    };
-}
+// //object.create and pure prototype inheritance
+// //old browers
+// //polyfill
+// if(!Object.create){
+//     Object.create = function(o){
+//         if(arguments.length > 1){
+//             throw new Error('Object.create implementation' + ' only accepts the first parameter')
+//         }
+//         function F(){
+//             F.prototype = o;
+//             return new F();
+//         }
+//     };
+// }
 
-//latsest browers
-var person = {
-    firstname: 'default',
-    lastname: 'default',
-    greet: function(){
-        return 'Hi ' + this.firstname
-    }
-}
+// //latsest browers
+// var person = {
+//     firstname: 'default',
+//     lastname: 'default',
+//     greet: function(){
+//         return 'Hi ' + this.firstname
+//     }
+// }
 
-var john = Object.create(person);
-john.firstname = 'john'
-john.lastname = 'doe'
-console.log(john);
+// var john = Object.create(person);
+// john.firstname = 'john'
+// john.lastname = 'doe'
+// console.log(john);
+
+
+//es6 and classes
+//classes are object
+//prototypal inheritance
