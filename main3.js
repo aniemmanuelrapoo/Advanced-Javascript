@@ -78,6 +78,10 @@ function Person(fn, ln) {
     console.log('this is invoked');
 }
 
+Person.prototype.getFullName = function(){
+    return this.firstname + " " + this.lastname;
+}
+
 var john = new Person('john', 'doe');
 console.log(john);
 
